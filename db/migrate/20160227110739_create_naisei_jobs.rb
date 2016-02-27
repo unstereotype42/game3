@@ -4,7 +4,7 @@ class CreateNaiseiJobs < ActiveRecord::Migration
       t.integer :user_id
       t.integer :naisei_id
       t.integer :level_up
-      t.time :start_time
+      t.datetime :start_time
       t.integer :time
       t.integer :run_flag
 

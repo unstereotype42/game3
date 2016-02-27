@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20160227110739) do
     t.integer  "user_id"
     t.integer  "naisei_id"
     t.integer  "level_up"
-    t.time     "start_time"
+    t.datetime "start_time"
     t.integer  "time"
     t.integer  "run_flag"
     t.datetime "created_at", null: false

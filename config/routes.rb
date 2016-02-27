@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'war/list'
+
+  get 'home/top'
+  get 'home/kaikon' => 'home#kaikon'
+  get 'home/syougyou' => 'home#syougyou'
+  get 'home/levelup' => 'home#levelup'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
