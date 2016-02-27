@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  user_name: MyString
+  money: 1
+  food: 1
+  army: 1
+  kaikon_lv: 1
+  syougyou_lv: 1
+
+two:
+  user_id: 1
+  user_name: MyString
+  money: 1
+  food: 1
+  army: 1
+  kaikon_lv: 1
+  syougyou_lv: 1

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  naisei_id: 1
+  naisei_name: MyString
+  naisei_name_j: MyString
+
+two:
+  naisei_id: 1
+  naisei_name: MyString
+  naisei_name_j: MyString
