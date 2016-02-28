@@ -1,0 +1,10 @@
+<h1>戦国AGE</h1>
+<h3><%= @enemy.user_name%>を攻める</h3>
+<p>
+攻めるのに必要な金【出兵費用】　　：<%= @attack_cost[:money]%><br>
+攻めるのに必要な兵糧【出兵兵糧】　：<%= @attack_cost[:food]%>
+</p>
+<ul>
+<li><%= link_to "攻める" , controller:"war" , action:"attack" , player_id:@player.user_id , enemy_id:@enemy.user_id%></li>
+</ul>
+<%= link_to "城に戻る" , controller:"home" , action:"top" %>

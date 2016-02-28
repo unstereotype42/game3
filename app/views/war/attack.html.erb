@@ -1,0 +1,15 @@
+<h1>戦国AGE</h1>
+<p>
+  <% if @win_flag == 1 then %>
+    <h3><%= @enemy.user_name %>に勝ちました！</h3>
+    <ul>
+      <li>兵力が<b><%= @player.army %></b>になりました</li>
+      <li>金を<b><%= @win_cost[:money] %></b>獲得しました</li>
+      <li>兵糧を<b><%= @win_cost[:food] %></b>獲得しました</li>
+    </ul>
+  <% elsif @win_flag == 0 then %>
+    <h3><%= @enemy.user_name %>に負けました...</h3>
+    <li>兵力が<b><%= @player.army %></b>になりました</li>
+  <% end %>
+</p>
+<%= link_to "城に戻る" , controller:"home" , action:"top" %>

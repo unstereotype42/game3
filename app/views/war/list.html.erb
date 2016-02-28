@@ -1,11 +1,11 @@
 <h1>戦国AGE</h1>
 <h3>他国を攻める</h3>
-どの国を攻めますか？
+<p>
+<h4>どの国を攻めますか？</h4>
 <ul>
-  <li>対戦国名／兵力：xxxxx</li>
-  <li>対戦国名／兵力：xxxxx</li>
+<% @enemylist.each do |enemy| %>
+<li><%= link_to "攻める" , controller:"war" , action:"confirm" , player_id:@player_id , enemy_id:enemy.user_id%> → 城主：<%= enemy.user_name %>【兵力：<%= enemy.army %>】</li>
+<% end %>
 </ul>
-
-<ul>
-  <li><%= link_to "城に戻る" , controller:"home" , action:"top" %></li>
-</ul>
+</p>
+<%= link_to "城に戻る" , controller:"home" , action:"top" %>
